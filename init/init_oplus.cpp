@@ -36,12 +36,12 @@ void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
-    
+
     char* build_fingerprint;
     char* build_desc;
 
-    build_desc = "redfin-user 13 TQ3A.230705.001 10216780 release-keys";
-    build_fingerprint = "google/redfin/redfin:13/TQ3A.230705.001/10216780:user/release-keys";
+    build_desc = "cheetah-user 13 TQ3A.230901.001 10750268 release-keys";
+    build_fingerprint = "google/cheetah/cheetah:13/TQ3A.230901.001/10750268:user/release-keys";
 
     switch (prjname) {
         // ice
